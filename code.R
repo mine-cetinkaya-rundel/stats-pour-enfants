@@ -7,13 +7,13 @@ library(waffle)
 
 colors <- tribble(
   ~color,   ~n,
-  "Bleu",   1,
-  "Jaune",  2,
-  "Orange", 3,
-  "Rose",   4,
-  "Rouge",  5,
-  "Vert",   6,
-  "Violet", 7
+  "Bleu",   0,
+  "Jaune",  1,
+  "Orange", 2,
+  "Rose",   1,
+  "Rouge",  7,
+  "Vert",   2,
+  "Violet", 4
 )
 
 # colors: bar plot -------------------------------------------------------------
@@ -59,18 +59,23 @@ ggplot(colors, aes(x = "", y = n, fill = color)) +
   theme_minimal() +
   labs(
     title = "Couleurs préférées des étudiants IMS",
-    subtitle = "______" # Camembert
+    subtitle = "Camembert" # 
   )
 
 # animals: create data ---------------------------------------------------------
 
 animals <- tribble(
   ~color,    ~n, ~emoji,
-  "Baleine", 1,  "🐋",
-  "Chat",    2,  "🐈",
+  "Panda",   1,  "🐼",
   "Chien",   3,  "🐕",
-  "Requin",  4,  "🦈",
-  "Serpent", 5,  "🐍"
+  "Tigre",   1,  "🐅",
+  "Serpent", 3,  "🐍",
+  "Cochon",  1,  "🐖",
+  "Chat",    1,  "🐈",
+  "Lapin",   1,  "🐇",
+  "Elephant",1,  "🐘",
+  "Lion",    2,  "🦁",
+  "Requin",  4,  "🦈"
 )
 
 # animals: bar plot ------------------------------------------------------------
@@ -104,12 +109,12 @@ ggplot(animals, aes(fill = color, values = n)) +
     aes(label = emoji),
     flip = TRUE,
     show.legend = FALSE,
-    size = 15
+    size = 10
   ) +
   scale_fill_manual(values = rep("lightgray", nrow(animals))) +
   coord_equal() +
   theme_void() +
   labs(
     title = "Animaux préférées des étudiants IMS",
-    subtitle = "____" # Tableau de gaufres
+    subtitle = "Graphique en gauffre" # 
   )
