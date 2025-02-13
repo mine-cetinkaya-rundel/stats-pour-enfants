@@ -2,7 +2,7 @@
 
 ![](coulerus-preferees-barres.png)
 
-![](coulerus-preferees-camambert.png)
+![](coulerus-preferees-camembert.png)
 
 ![](animaux-preferees-barres.png)
 
