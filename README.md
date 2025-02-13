@@ -1,8 +1,8 @@
 # stats-pour-enfants
 
-![](coulerus-preferees-barres.png)
+![](couleurs-preferees-barres.png)
 
-![](coulerus-preferees-camembert.png)
+![](couleurs-preferees-camembert.png)
 
 ![](animaux-preferees-barres.png)
 
